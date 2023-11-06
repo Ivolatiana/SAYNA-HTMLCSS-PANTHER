@@ -1,2 +1,157 @@
 @import url('https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+@font-face {
+    font-family: 'Cantarell';
+    src: url(../police/Cantarell-Regular.ttf);
+}
+:root{
+    --white-color: #FFFFFF;
+    --darkblue-color: #021740;
+    --blue-color: #07338C;
+    --blue-color: #3D2DA6;
+    --pink-color: #DF99F2;
+    --pink-light: #F2CEF2;
+    --purple-light: #9E91B7;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+body{
+    background-color: var(--darkblue-color);
+    color: #FFFFFF;
+    font-family: 'Cantarell';
+    font-weight: 300px;
+}
+/* Design de la navigation */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+ul{
+    list-style: none;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+
+nav ul a{
+    color: var(--white-color);
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Beyno';
+    padding: 3px 15px;
+    text-decoration: none;
+}
+ nav ul a:hover{
+    color: var(--purple-light);
+}
+/* desing de la partie en tete du haut*/
+#black-panther{
+    background-image: url(../Accueil/Pantherhome1..png);
+    height: 800px;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 700px;
+}
+#black-panther .title{
+    color: var(--purple-light);
+    font-size: 62px;
+    font-weight: 600;
+    font-family: 'Panthera';
+    padding-top: 300px;
+}
+#black-panther .title1{
+    color: var(--purple-light);
+    font-size: 32px;
+    font-weight: 200;
+    font-family: 'beyno';
+}
+#black-panther .text{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 50%;
+    font-size: 16px;
+    font-family: 'Cantarell';
+    padding-top: 15px ;
+}
+#black-panther .btn{
+    list-style: none;
+    color: var(--white-color);
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Cantarell';
+    padding-top: 3px 0;
+}
+
+#black-panther .btn:hover{
+    color: var(--purple-light);
+}
+/* design de la deuxième partie de la tete du haut */
+.friends-personnage{
+    display: flex;
+    justify-content: space-between;
+    text-align: justify;
+}
+
+.friends-personnage .slide-image{
+    width: 80%;
+
+}
+
+.friends-personnage .slide-content{
+    padding: 15px;
+    text-align: justify;
+    justify-items: right;
+}
+
+/* design de la deuxieme partie de la partie acceuil */
+#history{
+    width: 50%;
+    text-align: justify;
+    font-size: 16px;
+    font-family: 'Cantarell';
+}
+
+ #biographie .slider-items{
+    background-color: var(--white-color);
+    color: #021740;
+    background-size: 50px;
+}
+
+/* design contact */
+#contact{
+    width: 400%;
+    margin: 100px 0;
+    justify-items: center;
+    justify-content: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
