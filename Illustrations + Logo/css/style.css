@@ -4,6 +4,19 @@
     font-family: 'Cantarell';
     src: url(../police/Cantarell-Regular.ttf);
 }
+@font-face {
+    font-family: 'beyno';
+    src: url(../police/BEYNO.ttf);
+}
+@font-face {
+    font-family: 'panthera';
+    src: url(../police/PantheraRegular-MVZ9J.ttf);
+}
+@font-face {
+    font-family: 'wakanda';
+    src: url(../police/WakandaForever-Regular.ttf);
+}
+
 :root{
     --white-color: #FFFFFF;
     --darkblue-color: #021740;
@@ -46,14 +59,14 @@ nav ul a{
     color: var(--white-color);
     font-size: 15px;
     font-weight: 500;
-    font-family: 'Beyno';
+    font-family: 'beyno';
     padding: 3px 15px;
     text-decoration: none;
 }
  nav ul a:hover{
     color: var(--purple-light);
 }
-/* desing de la partie en tete du haut*/
+/* design de la partie en tete du haut*/
 #black-panther{
     background-image: url(../Accueil/Pantherhome1..png);
     height: 800px;
@@ -63,10 +76,9 @@ nav ul a{
 }
 #black-panther .title{
     color: var(--purple-light);
-    font-size: 62px;
-    font-weight: 600;
-    font-family: 'Panthera';
-    padding-top: 300px;
+    font-size: 64px;
+    font-weight: 200;
+    font-family: 'panthera';
 }
 #black-panther .title1{
     color: var(--purple-light);
@@ -104,7 +116,11 @@ nav ul a{
 
 .friends-personnage .slide-image{
     width: 80%;
-
+}
+.friends-personnage .title{
+    color: var(--purple-light);
+    font-family: 'beyno';
+    font-size: 32px;
 }
 
 .friends-personnage .slide-content{
@@ -113,27 +129,63 @@ nav ul a{
     justify-items: right;
 }
 
+
 /* design de la deuxieme partie de la partie acceuil */
+#history-biographie{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 #history{
     width: 50%;
     text-align: justify;
     font-size: 16px;
     font-family: 'Cantarell';
 }
-
- #biographie .slider-items{
-    background-color: var(--white-color);
-    color: #021740;
-    background-size: 50px;
+.history-personnage .title{
+    color: var(--purple-light);
+    font-family: 'beyno';
+    font-size: 32px;
+    margin-top: 50px;
 }
+
+ #biographie .slider-content{
+    width: 70%;
+    background-color: var(--white-color)
+    background-position: left;
+    color: #021740;
+}
+#biographie .slider-image{
+    width: 100%;
+    justify-content: space-between;
+    
+}
+
+
 
 /* design contact */
 #contact{
-    width: 400%;
-    margin: 100px 0;
-    justify-items: center;
-    justify-content: block;
+    background-image: url(../Accueil/Pantherhome7.png);
+    height: 800px;
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+#contact .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 200px; 
+    background-color: #ffffffbd;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
 
 
 
