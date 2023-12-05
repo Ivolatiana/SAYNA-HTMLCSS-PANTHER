@@ -1,7 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
 @font-face {
-    font-family: 'Cantarell';
+    font-family: 'cantarell';
     src: url(../police/Cantarell-Regular.ttf);
 }
 @font-face {
@@ -18,192 +16,347 @@
 }
 
 :root{
-    --white-color: #FFFFFF;
+    --white-color: #ffff;
+    --pink-color: #df99df;
+    --blue-color: #07338c;
     --darkblue-color: #021740;
-    --blue-color: #07338C;
-    --blue-color: #3D2DA6;
-    --pink-color: #DF99F2;
-    --pink-light: #F2CEF2;
-    --purple-light: #9E91B7;
+    --bluelight-color: #3d2da6;
+    --pinklight-color: #f2cef2;
+    --purple-color: #9e91b7;
 }
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+h1{
+    font-family: 'panthera';
+    font-size: 62px;
+    color: var(--purple-color);
+}
+
+p{
+    font-family: 'cantarell';
+    font-size: 16px;
+}
 .container{
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
+
 body{
-    background-color: var(--darkblue-color);
-    color: #FFFFFF;
-    font-family: 'Cantarell';
-    font-weight: 300px;
+    background-image: url(../All\ pages/arrière_plan.png);
+    color: var(--white-color);
+    font-weight: 200;
 }
-/* Design de la navigation */
+/*design de la navigation*/
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px 0;
 }
-ul{
-    list-style: none;
+.navlist{
     display: flex;
-    text-align: center;
-    justify-content: space-around;
+    list-style: none;
 }
 
-nav ul a{
+.navlist a{
+    text-decoration: none;
     color: var(--white-color);
-    font-size: 15px;
-    font-weight: 500;
     font-family: 'beyno';
-    padding: 3px 15px;
+    font-size: 14px;
+    margin-left: 60px;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+}
+.navlist a:hover{
+    color: var(--purple-color);
+    border-bottom: 2px solid var(--purple-color);
+}
+
+/*design de la première partie*/
+.hero{
+   height: 100%;
+   width: 100%;
+   min-height: 100vh;
+   position: relative;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   text-align: justify;
+   align-items: center;
+
+}
+.hero-text{
+    width: 500px;
+}
+section{
+    padding: 0 10%;
+}
+
+.hero-text h2{
+    font-family: 'beyno';
+    font-size: 32px;
+    color: var(--purple-color);
+}
+.hero-text p{
+    font-family: 'cantarell';
+    font-size: 16px;
+    color: var(--white-color);
+    line-height: 1;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.hero-text a{
+    color: var(--white-color);
+    font-family: 'cantarell';
+    font-size: 16px;
+    border-bottom: 2px solid white;
+    transition: all .55s ease;
     text-decoration: none;
 }
- nav ul a:hover{
-    color: var(--purple-light);
-}
-/* design de la partie en tete du haut*/
-#black-panther{
-    background-image: url(../Accueil/Pantherhome1..png);
-    height: 800px;
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: 700px;
-}
-#black-panther .title{
-    color: var(--purple-light);
-    font-size: 64px;
-    font-weight: 200;
-    font-family: 'panthera';
-}
-#black-panther .title1{
-    color: var(--purple-light);
-    font-size: 32px;
-    font-weight: 200;
-    font-family: 'beyno';
-}
-#black-panther .text{
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    width: 50%;
-    font-size: 16px;
-    font-family: 'Cantarell';
-    padding-top: 15px ;
-}
-#black-panther .btn{
-    list-style: none;
-    color: var(--white-color);
-    font-size: 15px;
-    font-weight: 500;
-    font-family: 'Cantarell';
-    padding-top: 3px 0;
+.hero-text a:hover{
+    color: var(--purple-color);
+    border-bottom: 2px solid var(--purple-color);  
 }
 
-#black-panther .btn:hover{
-    color: var(--purple-light);
+.hero-img img{
+    width: 700px;
+    height: auto;
+    margin-left: 10px;
 }
-/* design de la deuxième partie de la tete du haut */
-.friends-personnage{
+.icon{
+    position: absolute;
+    top: 30%;
+    padding: 1% 4%;
+}
+.icon img{
+    display: block;
+    margin: 26px 0;
+    font-size: 24px;
+    color: var(--purple-color);
+}
+/*deuxième partie*/
+.friends{
+    height: 5%;
+    width: 5%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    align-items: center;
+    gap: 3rem;
+}
+.friends p{
+    font-family: 'cantarell';
+    font-size: 16px;
+}
+
+.friends a{
+    color: var(--white-color);
+    font-family: 'cantarell';
+    font-size: 16px;
+    border-bottom: 2px solid white;
+    transition: all .55s ease;
+    text-decoration: none;
+}
+.friends a:hover{
+    color: var(--purple-color);
+    border-bottom: 2px solid var(--purple-color); 
+}
+.friends1{
     display: flex;
+}
+.friends1-text{
+    padding-left: 130px;
+    padding-top: 100px;
+    text-align: justify;
+    align-items: center;
+    justify-content: center; 
+}
+.friends1-img{
+    width: 40%;
+}
+.friends1-text h2{
+    font-family: 'beyno';
+    color: var(--purple-color);
+    font-size: 32px;
+}
+
+.friends2{
+    display: flex;
+}
+.friends2-img{
+    width: 30%;
+    padding-right: 50px;
+}
+.friends2-text{
+    padding-left: 140px;
+    padding-top: 50px;
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+}
+.friends2-text h2{
+    font-family: 'beyno';
+    color: var(--purple-color);
+    font-size: 32px;
+}
+.friends3-img{
+    width: 30%;
+}
+
+/* design de la troisième partie*/
+.histoire{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
     justify-content: space-between;
     text-align: justify;
+    gap: 2rem;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    padding-bottom: 20px;
 }
-
-.friends-personnage .slide-image{
-    width: 80%;
+.histoire-text{
+    width: 100%;
 }
-.friends-personnage .title{
-    color: var(--purple-light);
+.histoire-personnage{
+    margin-left: 70px;
+}
+.histoire h2{
     font-family: 'beyno';
     font-size: 32px;
+    color: var(--purple-color);
+    margin-top: 15px;
+}
+.histoire p{
+    font-family: 'cantarell';
+    font-size: 16px;
+    margin-top: 10px;
+}
+.histoire-personnage .biographie{
+    background-color: var(--white-color);
+    color: black;
+    background-position: bottom;
+    background-size: 80%;
+    width: 400px;
+    border-radius: 25px;
+    margin-left: 5%;
+    margin-top: 5%;
+    justify-content: center;
+    align-items: center;
+}
+.histoire-personnage .biographie p{
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+}
+.histoire-personnage .image{
+    margin-top: 10%;
+}
+.histoire-personnage .biographie1{
+    display: flex;
+    margin-bottom: 5px;
+    background-color: var(--bluelight-color);
+    border-radius: 30px;
 }
 
-.friends-personnage .slide-content{
-    padding: 15px;
-    text-align: justify;
-    justify-items: right;
+
+
+/*design contact*/
+.contact{
+    background-image: url(../Accueil/Pantherhome7.png);
+    height: 800px;
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+.contact-text{
+    background-color: rgba(255, 255, 255, 0.356);
+    height: 400px;
+    width: 600px;
+    color: black;
+    font-family: 'cantarell';
+    border: 1px solid transparent;
+    padding: 35px 150px;
+    line-height: 1.5;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 60px;
+}
+.contact-text p{
+    font-size: 12px;
+    text-decoration: 2px solid black;
+    margin-left: 12px;
+}
+.contact-text h2{
+    font-family: 'cantarell';
+    font-size: 32px;
+}
+.contact-text input{
+    color: black;
+    border: 1px solid black;
+    padding: 10px 32px;
+    border-radius: 15px;
+    background: transparent;
+    margin: 5px 15px;
+}
+.contact-text input .Envoyer{
+    padding: 40px 32px;
+    background-color: var(--pink-color);
 }
 
-
-/* design de la deuxieme partie de la partie acceuil */
-#history-biographie{
+/*design du footer*/
+footer{
+    background-image: url(../All\ pages/back_footer.png);
+}
+.footer{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-#history{
-    width: 50%;
-    text-align: justify;
+.footer_text{
+    font-family: 'cantarell';
     font-size: 16px;
-    font-family: 'Cantarell';
 }
-.history-personnage .title{
-    color: var(--purple-light);
-    font-family: 'beyno';
-    font-size: 32px;
+.footer_text p{
+    font-size: 10px;
+    margin-top: 10px;
+}
+.footer-reseaux{
+    margin-left: 22px;
+}
+.footer-reseaux h3{
+    font-family: 'cantarell';
+    font-size: 16px;
+}
+.footer_reseaux img{
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer_logo{
+    background-image: url(../All\ pages/footer1.png);
+    height: 350px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 300px;
     margin-top: 50px;
 }
-
- #biographie .slider-content{
-    width: 70%;
-    background-color: var(--white-color)
-    background-position: left;
-    color: #021740;
-}
-#biographie .slider-image{
-    width: 100%;
-    justify-content: space-between;
-    
-}
-
-
-
-/* design contact */
-#contact{
-    background-image: url(../Accueil/Pantherhome7.png);
-    height: 800px;
-    background-position: cover;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-#contact .content{
-    display: flex;
+.footer_logo img{
+    align-items: center;
     justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    width: 60%;
-    margin: 0 auto;
-    padding-top: 200px; 
-    background-color: #ffffffbd;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    margin-top: 50%;
+    margin-left: 23%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
+.footer_fin{
+    margin-left: 50%;
+    margin-bottom: 10px;
+}

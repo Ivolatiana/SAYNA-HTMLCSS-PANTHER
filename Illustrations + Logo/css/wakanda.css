@@ -1,0 +1,182 @@
+@font-face {
+    font-family: 'cantarell';
+    src: url(../police/Cantarell-Regular.ttf);
+}
+@font-face {
+    font-family: 'beyno';
+    src: url(../police/BEYNO.ttf);
+}
+@font-face {
+    font-family: 'panthera';
+    src: url(../police/PantheraRegular-MVZ9J.ttf);
+}
+@font-face {
+    font-family: 'wakanda';
+    src: url(../police/WakandaForever-Regular.ttf);
+}
+
+:root{
+    --white-color: #ffff;
+    --pink-color: #df99df;
+    --blue-color: #07338c;
+    --darkblue-color: #021740;
+    --bluelight-color: #3d2da6;
+    --pinklight-color: #f2cef2;
+    --purple-color: #9e91b7;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+body{
+    background-image: url(../All\ pages/arrière_plan.png);
+    color: var(--white-color);
+    font-weight: 300;
+}
+/*design de la navigation*/
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.navlist{
+    display: flex;
+    list-style: none;
+}
+
+.navlist a{
+    text-decoration: none;
+    color: var(--white-color);
+    font-family: 'beyno';
+    font-size: 14px;
+    margin-left: 60px;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+}
+.navlist a:hover{
+    color: var(--purple-color);
+    border-bottom: 2px solid var(--purple-color);
+}
+
+/*design de la première partie*/
+.wakanda{
+    background-image: url(../Wakanda/Pantherwakanda1.png);
+    height: 950px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.wakanda-text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    padding-top: 450px;
+    margin-left: 32px;
+    text-align: justify;
+}
+.wakanda-text h1{
+    font-family: 'panthera';
+    font-size: 68px;
+    color: var(--purple-color);
+}
+.wakanda-text h2{
+    font-family: 'wakanda';
+    font-size: 43px;
+    color: var(--purple-color);
+    padding-top: 5px;
+}
+.wakanda-text p{
+    font-family: 'cantarell';
+    font-size: 16px;
+    padding-top: 8px;
+}
+
+/*design de la deuxième partie*/
+.histoire{
+    height: 100%;
+    width: 90%;
+    min-height: 100vh;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: space-between;
+    text-align: justify;
+    gap: 2rem;
+    margin-bottom: 5%;
+    margin-right: 5%;
+    margin-left: 5%;
+    padding-bottom: 20px;
+    background-image: url(../Wakanda/Pantherwakanda2.png);
+    background-size: 900px;
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+.histoire h2{
+    font-family: 'beyno';
+    font-size: 32px;
+    padding-top: 10px;
+    color: var(--purple-color);
+}
+.histoire p{
+    font-family: 'cantarell';
+    font-size: 16px;
+    padding-top: 5px;
+}
+
+/*design du footer*/
+footer{
+    background-image: url(../All\ pages/back_footer.png);
+}
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 12px 150px;
+}
+.footer_text{
+    font-family: 'cantarell';
+    font-size: 16px;
+}
+.footer_text p{
+    font-size: 10px;
+    margin-top: 10px;
+}
+.footer-reseaux{
+    margin-left: 22px;
+}
+.footer-reseaux h3{
+    font-family: 'cantarell';
+    font-size: 16px;
+}
+.footer_reseaux img{
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer_logo{
+    background-image: url(../All\ pages/footer1.png);
+    height: 350px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 300px;
+    margin-top: 50px;
+}
+.footer_logo img{
+    align-items: center;
+    justify-content: center;
+    margin-top: 50%;
+    margin-left: 23%;
+}
+.footer_fin{
+    margin-left: 50%;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,188 @@
+@font-face {
+    font-family: 'cantarell';
+    src: url(../police/Cantarell-Regular.ttf);
+}
+@font-face {
+    font-family: 'beyno';
+    src: url(../police/BEYNO.ttf);
+}
+@font-face {
+    font-family: 'panthera';
+    src: url(../police/PantheraRegular-MVZ9J.ttf);
+}
+@font-face {
+    font-family: 'wakanda';
+    src: url(../police/WakandaForever-Regular.ttf);
+}
+
+:root{
+    --white-color: #ffff;
+    --pink-color: #df99df;
+    --blue-color: #07338c;
+    --darkblue-color: #021740;
+    --bluelight-color: #3d2da6;
+    --pinklight-color: #f2cef2;
+    --purple-color: #9e91b7;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    font-family: 'panthera';
+    font-size: 68px;
+    color: var(--purple-color);
+}
+
+p{
+    font-family: 'cantarell';
+    font-size: 16px;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+body{
+    background-image: url(../All\ pages/arrière_plan.png);
+    color: var(--white-color);
+    font-weight: 300;
+
+}
+/*design de la navigation*/
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.navlist{
+    display: flex;
+    list-style: none;
+}
+
+.navlist a{
+    text-decoration: none;
+    color: var(--white-color);
+    font-family: 'beyno';
+    font-size: 14px;
+    margin-left: 60px;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+}
+.navlist a:hover{
+    color: var(--purple-color);
+    border-bottom: 2px solid var(--purple-color);
+}
+/*design de la première partie*/
+.histoire{
+    background-image: url(../Enigme/Pantherenigme1.png);
+    height: 100%;
+    width: 100%;
+    background-position: top left;
+    background-size: 800px;
+    background-repeat: no-repeat;
+}
+.histoire2-title{
+    width: 650px;
+    margin-left: 600px;
+    margin-bottom: 10px;
+    padding-top: 200px;
+}
+.histoire2-text{
+    background-image: url(../Enigme/Pantherenigme2.png);
+    height: 400px;
+    background-size: cover;
+    width: 600px;
+    margin-left: 600px;
+    margin-top: 150px;
+    background-position-y: top;
+}
+.histoire2 img{
+    width: 600px;
+    margin-left: 600px;
+    border: #021740;
+}
+/*deuxième partie*/
+.bio{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.bio h2{
+    font-family: 'wakanda';
+    font-size: 32px;
+    color: var(--purple-color);
+    width: 700px;
+}
+.bio1 p{
+    margin-top: 50px;
+}
+
+.bio2-text{
+    margin-left: 80px;
+    margin-top: 100px;
+    margin-bottom: 500px;
+    width: 80%;
+    background-image: url(../Enigme/Pantherenigme2.png);
+    height: 500px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-content: center;
+}
+
+
+
+
+
+/*design du footer*/
+footer{
+    background-image: url(../All\ pages/back_footer.png);
+}
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer_text{
+    font-family: 'cantarell';
+    font-size: 16px;
+}
+.footer_text p{
+    font-size: 10px;
+    margin-top: 10px;
+}
+.footer-reseaux{
+    margin-left: 22px;
+}
+.footer-reseaux h3{
+    font-family: 'cantarell';
+    font-size: 16px;
+}
+.footer_reseaux img{
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer_logo{
+    background-image: url(../All\ pages/footer1.png);
+    height: 350px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 300px;
+    margin-top: 50px;
+}
+.footer_logo img{
+    align-items: center;
+    justify-content: center;
+    margin-top: 50%;
+    margin-left: 23%;
+}
+.footer_fin{
+    margin-left: 50%;
+    margin-bottom: 10px;
+}
